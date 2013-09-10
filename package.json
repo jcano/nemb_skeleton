@@ -1,0 +1,44 @@
+{
+    "name": "nemb-skel",
+    "version": "0.0.1",
+    "license": "MIT license",
+    "description": "Some description",
+    
+    "author": "Author Name <email@address.com>",
+    
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jcano/nemb-skel"
+    },
+
+    "engines": {
+      "node": "0.10.x",
+      "npm": "1.2.x"
+    },
+
+  "scripts": {
+      "start": "node app",
+    },
+
+    "dependencies": {
+        "express": "~3.1.0",
+        "express-resource": "latest",
+        "path": "~0.4.9",
+        "jade": "latest",
+        "mongoose": "~3.5.5",
+  },
+
+  "devDependencies": {
+  },
+
+  "keywords": [
+      "nodejs",
+      "node.js",
+      "express",
+      "backbone",
+      "mongoos",
+      "skel",
+      "skeleton"
+    ]
+
+}
