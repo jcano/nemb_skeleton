@@ -11,13 +11,15 @@ var path = require('path');
 // Create an Express object
 var app = express();
 
-// This app imports and variables
+// This app's imports and variables
 var handlers_path = path.join(__dirname, '/handlers');
+
 var routes = require(handlers_path);
 var user = require(path.join(handlers_path, 'user.js'));
 
 // Import database settings
-app.mongoose = require('./models');
+var models_path = path.join(__dirname, '/handlers');
+app.mongoose = require(models_path);
 
 // Config variables
 app.set('port', process.env.PORT || 8000);
